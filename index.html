@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+<!--Encabezado-->
+<header class="header">
+  
+  <div class="container-menu">
+    <div class="container-icon">
+      <p>iShop!</p>
+      <a href="#"><i class="fa-brands fa-shopify"></i></a>
+    </div>
+    
+    
+   <!--Menu-desktop-->
+   <nav class="menu-desktop">
+    <ul class="lista-desktop">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Delivery</a></li>
+      <li><a href="#">Catalogo</a></li>
+    </ul>
+  </nav>
+  
+    <div class="lista-items disable">
+     
+     <template id="template-lista">  
+     <div class="container-items">
+       
+      
+      <span class="sp1">1</span>
+      <span class="sp2">Item</span>
+      <span class="sp3">$45.000</span>
+      <span class="sp4">X</span>
+     </div> 
+     </template>
+      
+    </div>
+    
+    
+    <span class="numCompra">0</span>
+    
+    
+    
+    <div class="container-menu-shop">
+      <button id="btn">     
+   <img src="img/bag.svg" alt="" class="img-cart">
+      </button>
+      <button class="btnOpen">
+    <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </div>
+  
+  <!--Menu-responsive-mobile-->
+  <nav class="menu-mobile disable">
+    <div class="con-menu">
+      <button  class="btnCerrar">
+          <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    
+    <ul class="lista">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Delivery</a></li>
+      <li><a href="#">Catalogo</a></li>
+    </ul>
+  </nav>
+  
+  
+  
+ 
+  
+
+
+<section class="hero_header">
+  <div class="hero-text">
+    <h1>Elige iShop!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam facilisis eleifend laoreet. Vivamus sit amet feugiat magna.</p>
+    <a href="#" class="cta">Tienda</a>
+  </div>
+  
+  <div class="hero_img">
+    <img src="img/hero-img.svg" alt="">
+  </div>
+</section>
+  
+  
+</header>
+
+
+
+<section class="cards">
+  <div class="title">
+    <h1>Productos</h1> 
+  </div>
+  
+  <div class="card">
+    <template id="template-card"> 
+    <div class="container-card">
+    <div class="card-img">
+      <img src="img/imagen2.jpg" alt="">
+    </div>
+    
+    <div class="info-card">
+      <p class="nombre">Item</p>
+      <p class="precio">47.000</p>
+      <button class="btnAgregar">AGREGAR AL CARRO</button>
+    </div>
+    
+  </div>
+  </template>
+  </div>
+  
+   
+   
+  
+</section>
+  
+  
+
+<!--Javasacript-->
+<script src="codigo.js"></script>
+</body>
+</html>
